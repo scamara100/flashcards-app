@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="app-title">📚 Flashcards</h1>
+                <nav class="header-nav">
+                    <button class="btn btn-primary">New Deck</button>
+                    <button class="btn btn-secondary">Settings</button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2>Decks</h2>
+                </div>
+                <nav class="decks-list">
+                    <div class="deck-item active">
+                        <span class="deck-name">Spanish Vocab</span>
+                        <span class="deck-count">24</span>
+                    </div>
+                    <div class="deck-item">
+                        <span class="deck-name">French Phrases</span>
+                        <span class="deck-count">18</span>
+                    </div>
+                    <div class="deck-item">
+                        <span class="deck-name">Math Formulas</span>
+                        <span class="deck-count">32</span>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <section class="cards-header">
+                    <h2>Spanish Vocab</h2>
+                    <div class="cards-controls">
+                        <span class="card-progress">Card 1 of 24</span>
+                        <button class="btn btn-small">Shuffle</button>
+                    </div>
+                </section>
+
+                <div class="cards-grid">
+                    <div class="card-container">
+                        <div class="flashcard">
+                            <div class="flashcard-front">
+                                <p>Click to reveal</p>
+                            </div>
+                            <div class="flashcard-back hidden">
+                                <p>Answer goes here</p>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-small">← Prev</button>
+                            <button class="btn btn-small">Next →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-stats">
+                    <div class="stat">
+                        <span class="stat-label">Correct:</span>
+                        <span class="stat-value">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Incorrect:</span>
+                        <span class="stat-value">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Progress:</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Flashcards App. Created for learning.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
